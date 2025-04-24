@@ -109,9 +109,10 @@ class Config {
   }
 
   getFilePreview(fileId) {
-    return this.storage.getFilePreview(conf.appwrtieBucketId, fileId);
+    // return this.storage.getFilePreview(conf.appwrtieBucketId, fileId);
+    return this.storage.getFileView(conf.appwrtieBucketId, fileId);
   }
 }
 
-const config = new Config();
+const config = new Config(); 
 export default config;
